@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+:root {
+    --bg-clr: hsl(275, 100%, 97%); /* light pink */
+    --accordian-bg-clr: hsl(0, 0%, 100%); /* white */
+    --ff-clr-primary: hsl(292, 42%, 14%); /* dark purple */
+    --ff-clr-secondary: hsl(292, 16%, 49%); /* grayish purple */
+    --ff-regular: font-weight: 400; /* regular font weight */
+    --ff-semibold: font-weight: 600; /* semibold font weight */
+    --ff-bold: font-weight: 700; /* bold font weight */
+    font-size: 1rem;
+}
+body {
+    font-family: Work Sans, sans-serif, system-ui;
+    background-color: var(--bg-clr);
+    color: var(--ff-clr-primary);
+}
