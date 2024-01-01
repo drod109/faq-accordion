@@ -18,10 +18,29 @@
     --ff-regular: font-weight: 400; /* regular font weight */
     --ff-semibold: font-weight: 600; /* semibold font weight */
     --ff-bold: font-weight: 700; /* bold font weight */
-    font-size: 1rem;
 }
-body {
+html {
     font-family: Work Sans, sans-serif, system-ui;
     background-color: var(--bg-clr);
     color: var(--ff-clr-primary);
+    font-size: 1rem;
+}
+body {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+}
+.wrapper {
+    top: 225px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
