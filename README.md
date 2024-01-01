@@ -39,7 +39,7 @@ Users should be able to:
 
 ## My process
 
-Similar to other projects I used the design images to build a mock up of the structure I need to apply to ensure a semantic markup and layout. This will be my first time building and accodian from scratch so this will require some research on [MDN](https://developer.mozilla.org/en-US/).
+Similar to other projects I used the design images to build a mock up of the structure I need to apply to ensure a semantic markup and layout. This will be my first time building an accodian from scratch so this will require some research on [MDN](https://developer.mozilla.org/en-US/).
 
 ### Built with
 
