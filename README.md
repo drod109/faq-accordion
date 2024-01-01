@@ -76,7 +76,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [<details>: The Details disclosure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
+- [The Details disclosure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
 - [ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/examples/accordion/)
 
 ## Author
