@@ -50,33 +50,12 @@ Similar to other projects I used the design images to build a mock up of the str
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In this project I have learned that using both the "details" and " summary" elements reduces
+the code needed for this pattern.
 
 ### Useful resources
 
-- [The Details disclosure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
+- [&#60;details&#62; Details disclosure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
 - [ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/examples/accordion/)
 
 ## Author
