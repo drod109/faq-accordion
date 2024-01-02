@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/drod109/faq-accordion)
-- Live Site 1 URL: [QR Code Component | Live Preview](https://drod109.github.io/)
+- Live Site 1 URL: [QR Code Component | Live Preview](https://drod109.github.io/faq-accordion/)
 - Live Site 2 URL: [QR Code Component | Live Preview](https://codepen.io/drodrigues/full/WNmQLJa)
 
 ## My process
