@@ -84,7 +84,7 @@ summary:focus {
     outline: 0.063rem solid var(--light-pink);
 }
 summary::before {
-content: url(/assets/images/icon-plus.svg);
+content: url(https://i.postimg.cc/d1D1sdBw/icon-plus.png);
 right: 0;
 }
 summary::before,
@@ -101,7 +101,7 @@ transform: rotate(90deg);
 transform-origin: 50% 50%;
 }
 [open] summary::after {
-    content: url(/assets/images/icon-minus.svg);
+    content: url(https://i.postimg.cc/bvmrfL1m/icon-minus.png);
     transform: rotate(0deg);
 }
 
