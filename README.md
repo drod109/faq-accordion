@@ -55,8 +55,9 @@ the code needed for this pattern.
 
 ### Useful resources
 
-- [&#60;details&#62; Details disclosure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
+- [&#60;details&#62;&#58; The Details disclosure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
 - [ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/examples/accordion/)
+- [Webdev - Details and Summary] (https://web.dev/learn/html/details)
 
 ## Author
 
