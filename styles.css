@@ -11,10 +11,10 @@
     border: none;
 }
 :root {
-    --bg-clr: hsl(275, 100%, 97%); /* light pink */
-    --accordian-bg-clr: hsl(0, 0%, 100%); /* white */
-    --ff-clr-primary: hsl(292, 42%, 14%); /* dark purple */
-    --ff-clr-secondary: hsl(292, 16%, 49%); /* grayish purple */
+    --light-pink: hsl(275, 100%, 97%); /* light pink */
+    --white: hsl(0, 0%, 100%); /* white */
+    --dark-purple: hsl(292, 42%, 14%); /* dark purple */
+    --grayish-purple: hsl(292, 16%, 49%); /* grayish purple */
     --fw-regular: font-weight: 400; /* regular font weight */
     --fw-semibold: font-weight: 600; /* semibold font weight */
     --fw-bold: font-weight: 700; /* bold font weight */
@@ -22,8 +22,8 @@
 }
 body {
     font-family: Work Sans, sans-serif, system-ui;
-    background-color: var(--bg-clr);
-    color: var(--ff-clr-primary);
+    background-color: var(--light-pink);
+    color: var(--dark-purple);
     font-size: 1rem;
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@ body {
     position: absolute;
     width: 100%;
     object-fit: cover;
-    height: 250px;
+    height: 15.625rem;
     z-index: -1;
     top: 0;
 }
@@ -43,104 +43,89 @@ body {
     place-self: center;
     align-items: center;
     border-radius: 10px;
-    background-color: var(--accordian-bg-clr);
-    box-shadow: 5px 5px 5px var(--box-shadow);
+    background-color: var(--white);
+    box-shadow: 0.313rem 0.313rem 0.313rem var(--box-shadow);
     min-height: 68%;
-    width: 600px;
-    max-width: 1440px;
+    width: 37.5rem;
+    max-width: 90em;
 }
 .accordion {
     width: 100%;   
-    padding: 0 30px;
-    border-radius: 15px;
+    padding: 0 1.875rem;
+    border-radius: 0.938rem;
 }
 .accordion-hdr {
     display: flex;
     align-items: center;
-    padding: 30px 0;
-    gap: 20px;
+    padding: 2.5rem 0 0 0;
+    gap: 1.25em;
 }
  h1 {
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 .accordion-body {
-    padding: 10px 10px;
+    padding: 0 0.625rem;
 }
 summary {
     position: relative;
-    padding: 1rem 2em 1rem 0;
+    padding: 1rem 2rem 1rem 0;
     cursor: pointer;
-  }
-  summary::marker {
-    content: none;
-  }
-  summary::before {
-    content: url(/assets/images/icon-plus.svg);
+    color: var(--dark-purple);
+}
+summary > h2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+summary::marker {
+content: none;
+}
+summary::before {
+content: url(/assets/images/icon-plus.svg);
+right: 0;
+}
+summary::before,
+summary::after {
+    width: 0.75rem;
+    height: 0;
+    position: absolute;
+    top: calc(20% - 0.063rem);
     right: 0;
-  }
-  summary::before,
-  summary::after {
-      width: .75em;
-      height: 0;
-      position: absolute;
-      top: calc(20% - 1px);
-      right: 0;
-      transform: translateY(-50%);
-    }
-  summary::after {
-    transform: rotate(90deg);
-    transform-origin: 50% 50%;
-  }
-  [open] summary::after {
+    transform: translateY(-50%);
+}
+summary::after {
+transform: rotate(90deg);
+transform-origin: 50% 50%;
+}
+[open] summary::after {
     content: url(/assets/images/icon-minus.svg);
     transform: rotate(0deg);
-  }
-  
-  
+}
+
 details {
     position: relative;
-    right: 15px;
-    padding: 1em 1rem;
-    border-bottom: 1px solid rgba(140 105 145 / 15%);
+    right: 0.938em;
+    padding: 1rem 1rem;
+    border-bottom: 0.063rem solid rgba(140 105 145 / 15%);
+}
+details > p {
+    color: var(--grayish-purple);
+    font-size: 0.9rem;
+    padding-bottom: 0.625rem;
 }
 details + details {
     border-top: none;
 }
 details[open] {
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 }
 details:last-of-type {
     border-bottom: none;
 }
 
-@media (min-width: 200px) and (max-width: 349px){
+@media (max-width: 39.375rem){
     .wrapper {
-        max-width: 95%;
-        transition: 3ms ease-in;
-    }
-}
-@media (min-width: 350px) and (max-width: 499px){
-    .wrapper {
-        max-width: 70%;
-        transition: 3ms ease-in;
-    }
-}
-@media (min-width: 500px) and (max-width: 699px){
-    .wrapper {
-        max-width: 50%;
-        transition: 3ms ease-in;
-    }
-}
-@media (min-width: 700px) and (max-width: 900px){
-    .wrapper {
-        max-width: 38%;
-        transition: 3ms ease-in;
-    }
-}
-@media (min-width: 900) and (max-width: 1440px){
-    .wrapper {
-        max-width: 38%;
-        transition: 3ms ease-in;
+        max-width: 90%;
+        transition: 3ms ease;
     }
 }

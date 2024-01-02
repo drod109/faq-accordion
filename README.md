@@ -29,13 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Project Screenshot](https://i.postimg.cc/)
+![Project Screenshot](https://i.postimg.cc/xT5Yp5M8/Screenshot-2024-01-02-150302.png)
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/drod109/)
+- Solution URL: [Github Repo](https://github.com/drod109/faq-accordion)
 - Live Site 1 URL: [QR Code Component | Live Preview](https://drod109.github.io/)
-- Live Site 2 URL: [QR Code Component | Live Preview](https://codepen.io/drodrigues/full/)
+- Live Site 2 URL: [QR Code Component | Live Preview](https://codepen.io/drodrigues/full/WNmQLJa)
 
 ## My process
 
