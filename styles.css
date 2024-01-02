@@ -27,10 +27,10 @@ body {
     font-size: 1rem;
     display: flex;
     justify-content: center;
-    max-width: 100%;
-    height: 100vh;
+    align-items: flex-end;
+    min-height: 100vh;
 }
-.header {
+.hdr-img {
     position: absolute;
     width: 100%;
     object-fit: cover;
@@ -45,36 +45,102 @@ body {
     border-radius: 10px;
     background-color: var(--accordian-bg-clr);
     box-shadow: 5px 5px 5px var(--box-shadow);
-    min-height: 65%;
-    max-width: 45%;
+    min-height: 68%;
+    width: 600px;
+    max-width: 1440px;
 }
 .accordion {
-    max-width: 99%;
+    width: 100%;   
     padding: 0 30px;
     border-radius: 15px;
-    overflow: hidden;
 }
-.accordion-header {
+.accordion-hdr {
     display: flex;
     align-items: center;
-    gap: 5px;
-    padding: 20px 0;
+    padding: 30px 0;
+    gap: 20px;
 }
+ h1 {
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.accordion-body {
+    padding: 10px 10px;
+}
+summary {
+    position: relative;
+    padding: 1rem 2em 1rem 0;
+    cursor: pointer;
+  }
+  summary::marker {
+    content: none;
+  }
+  summary::before {
+    content: url(/assets/images/icon-plus.svg);
+    right: 0;
+  }
+  summary::before,
+  summary::after {
+      width: .75em;
+      height: 0;
+      position: absolute;
+      top: calc(20% - 1px);
+      right: 0;
+      transform: translateY(-50%);
+    }
+  summary::after {
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
+  }
+  [open] summary::after {
+    content: url(/assets/images/icon-minus.svg);
+    transform: rotate(0deg);
+  }
+  
+  
+details {
+    position: relative;
+    right: 15px;
+    padding: 1em 1rem;
+    border-bottom: 1px solid rgba(140 105 145 / 15%);
+}
+details + details {
+    border-top: none;
+}
+details[open] {
+    padding-bottom: 1em;
+}
+details:last-of-type {
+    border-bottom: none;
+}
+
 @media (min-width: 200px) and (max-width: 349px){
     .wrapper {
         max-width: 95%;
         transition: 3ms ease-in;
     }
 }
-@media (min-width: 350px) and (max-width: 767px){
+@media (min-width: 350px) and (max-width: 499px){
     .wrapper {
-        max-width: 90%;
+        max-width: 70%;
         transition: 3ms ease-in;
     }
 }
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 500px) and (max-width: 699px){
     .wrapper {
-        max-width: 70%;
+        max-width: 50%;
+        transition: 3ms ease-in;
+    }
+}
+@media (min-width: 700px) and (max-width: 900px){
+    .wrapper {
+        max-width: 38%;
+        transition: 3ms ease-in;
+    }
+}
+@media (min-width: 900) and (max-width: 1440px){
+    .wrapper {
+        max-width: 38%;
         transition: 3ms ease-in;
     }
 }
