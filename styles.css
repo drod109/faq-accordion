@@ -40,6 +40,7 @@ body {
     top: 0;
 }
 .wrapper {
+    position: relative;
     display: flex;
     place-self: center;
     align-items: center;
