@@ -81,7 +81,7 @@ summary::marker {
 content: none;
 }
 summary:focus {
-    outline: 0.063rem solid var(--light-pink);
+    outline: transparent;
 }
 summary::before {
 content: url(https://i.postimg.cc/d1D1sdBw/icon-plus.png);
@@ -95,6 +95,9 @@ summary::after {
     top: calc(20% - 0.063rem);
     right: 0;
     transform: translateY(-50%);
+}
+summary:hover {
+    color: #ac28ea;
 }
 summary::after {
 transform: rotate(90deg);
