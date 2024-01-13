@@ -152,7 +152,7 @@ details:last-of-type {
 
 @media (max-width: 31.25rem){
     body {
-        background-image: url('/assets/images/background-pattern-mobile.svg');
+        background-image: url('assets/images/background-pattern-mobile.svg');
         background-size: 100% auto;
         background-position: top center;
     }
