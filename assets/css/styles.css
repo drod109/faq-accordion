@@ -32,8 +32,9 @@ body {
     background-position: top center;
     background-size: 100% auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     min-height: 100vh;
     min-height: 100svh;
 }
@@ -44,13 +45,6 @@ body {
     height: 15.625rem;
     z-index: -1;
     top: 0;
-}
-.wrapper {
-    position: relative;
-    display: flex;
-    place-self: center;
-    align-items: center;
-    
 }
 .accordion {
     width: 100%;   
@@ -107,6 +101,7 @@ summary::after {
 }
 summary:hover {
     color: #ac28ea;
+    transition: color .3s ease;
 }
 summary::after {
 transform: rotate(90deg);
@@ -140,14 +135,14 @@ details:last-of-type {
 .author {
     position: relative;
     font-size: 0.7690rem;
-    top: 18px;
-    left: 120px;
+    top: 5px;
 }
 .author > a {
     color: inherit;
 }
 .author > a:hover {
     color: #ac28ea;
+    transition: color .3s ease;
 }
 
 @media (max-width: 31.25rem){
@@ -155,9 +150,5 @@ details:last-of-type {
         background-image: url("../images/background-pattern-mobile.svg");
         background-size: 100% auto;
         background-position: top center;
-    }
-    .wrapper {
-        max-width: 90%;
-        transition: 3ms ease;
     }
 }
