@@ -20,15 +20,22 @@
     --fw-bold: font-weight: 700; /* bold font weight */
     --box-shadow: rgba(140, 105, 145, 0.099);
 }
-body {
+html {
     font-family: Work Sans, sans-serif, system-ui;
+    font-size: 16px;
+}
+body {
     background-color: var(--light-pink);
     color: var(--dark-purple);
-    font-size: 1rem;
+    background-image: url('/assets/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     min-height: 100vh;
+    min-height: 100svh;
 }
 .hdr-img {
     position: absolute;
@@ -43,17 +50,18 @@ body {
     display: flex;
     place-self: center;
     align-items: center;
+    
+}
+.accordion {
+    width: 100%;   
+    padding: 0 1.875rem;
+    border-radius: 0.938rem;
     border-radius: 10px;
     background-color: var(--white);
     box-shadow: 0.313rem 0.313rem 0.313rem var(--box-shadow);
     min-height: 68%;
     width: 37.5rem;
     max-width: 90em;
-}
-.accordion {
-    width: 100%;   
-    padding: 0 1.875rem;
-    border-radius: 0.938rem;
 }
 .accordion-hdr {
     display: flex;
@@ -129,21 +137,25 @@ details[open] {
 details:last-of-type {
     border-bottom: none;
 }
-.credit {
+.author {
     position: relative;
-    display: block;
-    text-align: center;
     font-size: 0.7690rem;
     top: 18px;
+    left: 120px;
 }
-.credit > a {
+.author > a {
     color: inherit;
 }
-.credit > a:hover {
+.author > a:hover {
     color: #ac28ea;
 }
 
-@media (max-width: 39.375rem){
+@media (max-width: 31.25rem){
+    body {
+        background-image: url('/assets/images/background-pattern-mobile.svg');
+        background-size: 100% auto;
+        background-position: top center;
+    }
     .wrapper {
         max-width: 90%;
         transition: 3ms ease;
