@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Preview Primary URL: [QR Code Component | Live Preview](https://drod109.github.io/faq-accordion/)
+- Live Preview Primary URL: [QR Code Component | Live Preview](https://drod109.github.io/faq-accordion-card/)
 - Live Preview Backup URL: [QR Code Component | Live Preview](https://codepen.io/drodrigues/full/WNmQLJa)
 
 ## My process
