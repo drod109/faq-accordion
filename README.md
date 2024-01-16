@@ -13,7 +13,6 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -32,9 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/drod109/faq-accordion)
-- Live Site 1 URL: [QR Code Component | Live Preview](https://drod109.github.io/faq-accordion/)
-- Live Site 2 URL: [QR Code Component | Live Preview](https://codepen.io/drodrigues/full/WNmQLJa)
+- Live Preview Primary URL: [QR Code Component | Live Preview](https://drod109.github.io/faq-accordion/)
+- Live Preview Backup URL: [QR Code Component | Live Preview](https://codepen.io/drodrigues/full/WNmQLJa)
 
 ## My process
 
